@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_login {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+
+.container_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.container_inputs {
+  margin-top: 20px;
+}
+
+.input_login, .input_senha {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input_login label, .input_senha label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.input_login input, .input_senha input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: 0;
+  transition: all 0.3s ease;
+}
+
+.input_login input:focus, .input_senha input:focus {
+  border-bottom: 2px solid #0000ff;
+}
+
+.input_login input:focus + label, .input_senha input:focus + label {
+  transform: translateY(-20px);
+}
+
+.container_botao {
+  display: flex;
+  justify-content: center;
+}
+
+.botao_login {
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botao_login:hover {
+  background-color: darkred;
+}
